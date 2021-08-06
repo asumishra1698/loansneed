@@ -11,5 +11,6 @@ export class CarLoanComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
+  title: string = "CAR LOAN";
+  panelOpenState = false;
 }

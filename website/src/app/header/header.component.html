@@ -1,1 +1,43 @@
-<p>header works!</p>
+<div class="container">
+    <div class="row mt-2 mb-2">
+      <div class="col-lg-2 col-5"> <a class="navbar-brand" routerLink=''><img src="assets/logo.webp" alt="logo" width="100%" height="auto"></a></div>
+      <div class="col-lg-10 col-7" style="text-align: right;">
+        <div><img src="assets/phone.webp" alt="phone" width="30px" height="auto"><a href="tel:+91 9716121823">+91 9716121823</a></div>
+        <div><img src="assets/gmail.webp" alt="gmail" width="30px" height="auto"><a href = "mailto:ankit@loansneed.com"> ankit@loansneed.com</a></div>
+      </div>
+    </div>
+  </div>
+  
+  
+  
+  
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container mb-4">
+      <div id="mySidenav" class="sidenav" onclick="closeNav()">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a class="nav-link" routerLink='service/personal-loan'>Personal Loans</a>
+        <a class="nav-link" routerLink='service/business-loan'>Business Loans</a>
+        <a class="nav-link" routerLink='service/gold-loan'>Gold Loans</a>
+        <a class="nav-link" routerLink='service/car-loan'>Car Loans</a>
+        <a class="nav-link" routerLink='service/home-loan'>Home Loans</a>
+        <a class="nav-link" routerLink='service/credit-card'>Credit Card</a>
+        <a class="nav-link" routerLink='service/insurance'>Insurance</a>
+        <a class="nav-link" routerLink='service/fixed-deposit'>Fixed Deposite</a>
+      </div>
+      <span style="font-size:30px;cursor:pointer" class="sidenav1" onclick="openNav()">&#9776;</span>
+  
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link" routerLink='service/personal-loan'>Personal Loans</a>
+          <a class="nav-link" routerLink='service/business-loan'>Business Loans</a>
+          <a class="nav-link" routerLink='service/gold-loan'>Gold Loans</a>
+          <a class="nav-link" routerLink='service/car-loan'>Car Loans</a>
+          <a class="nav-link" routerLink='service/home-loan'>Home Loans</a>
+          <a class="nav-link" routerLink='service/credit-card'>Credit Card</a>
+          <a class="nav-link" routerLink='service/insurance'>Insurance</a>
+          <a class="nav-link" routerLink='service/fixed-deposit'>Fixed Deposit</a>
+        </div>
+      </div>
+      <button routerLink="page/apply-now" mat-raised-button color="">APPLY NOW</button>
+    </div>
+  </nav>

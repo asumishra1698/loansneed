@@ -11,5 +11,6 @@ export class BusinessLoanComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
+  title: string = "BUSINESS LOAN";
+  panelOpenState = false;
 }

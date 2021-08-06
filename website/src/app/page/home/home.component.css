@@ -1,0 +1,20 @@
+.example-header-image {
+    background-image: url('https://loansneed-28022.web.app/assets/lnservices.webp');
+    background-size: cover;
+  }
+  .mat-action{
+      text-align: center;
+  }
+  .mat-card-header-text{
+    margin: 0px 1px;
+  }
+
+@media only screen and (max-width: 600px){
+.banner{
+  display: none !important;
+}}
+
+@media only screen and (min-width: 600px){
+  .bannermobile{
+    display: none !important;
+  }}

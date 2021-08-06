@@ -11,5 +11,6 @@ export class FaqComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
+  title: string = "Frequently Ask Questions";
+  panelOpenState = false;
 }

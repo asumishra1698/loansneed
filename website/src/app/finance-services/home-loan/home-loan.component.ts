@@ -11,5 +11,6 @@ export class HomeLoanComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
+  title: string = "HOME LOAN";
+  panelOpenState = false;
 }

@@ -1,1 +1,61 @@
-<p>apply-now works!</p>
+<div class="mt-4 mb-4">
+    <div class="col-lg-4 offset-lg-4 col-md-6 offset-md-3">
+      <form class="back">
+        <h1 class="text-center">{{title}}</h1>
+        <mat-form-field class="full-width" appearance="fill">
+          <mat-label>Full Name</mat-label>
+          <input matInput [formControl]="NameFormControl" placeholder="Ankur Mishra">
+          <mat-error *ngIf="NameFormControl.hasError('') && !NameFormControl.hasError('required')">
+            Please enter a valid Name
+          </mat-error>
+          <mat-error *ngIf="NameFormControl.hasError('required')">
+            Name is <strong>required</strong>
+          </mat-error>
+        </mat-form-field>
+  
+        <mat-form-field class="full-width" appearance="fill">
+          <mat-label>Email</mat-label>
+          <input type="email" matInput [formControl]="emailFormControl" placeholder="Ex. loan@example.com">
+          <mat-error *ngIf="emailFormControl.hasError('email') && !emailFormControl.hasError('required')">
+            Please enter a valid email address
+          </mat-error>
+          <mat-error *ngIf="emailFormControl.hasError('required')">
+            Email is <strong>required</strong>
+          </mat-error>
+        </mat-form-field>
+  
+        <mat-form-field class="full-width" hintLabel="Max 10 Digit" appearance="fill" input="number">
+          <mat-label>Enter Phone Number</mat-label>
+          <input matInput #input maxlength="10" placeholder="Ex. 9716121823">
+          <mat-hint align="end">{{input.value?.length || 0}}/10</mat-hint>
+        </mat-form-field>
+  
+        <mat-form-field appearance="fill" class="full-width">
+          <mat-label>Select Tpye of loan</mat-label>
+          <mat-select [formControl]="loanControl" required>
+            <mat-option>--</mat-option>
+            <mat-option *ngFor="let loan of loans" [value]="loan">
+              {{loan.name}}
+            </mat-option>
+          </mat-select>
+          <mat-error *ngIf="loanControl.hasError('required')">Please choose an loan</mat-error>
+        </mat-form-field>
+  
+        <mat-form-field appearance="fill" class="full-width">
+          <mat-label>Select Tpye of state</mat-label>
+          <mat-select [formControl]="stateControl" required>
+            <mat-option>--</mat-option>
+            <mat-option *ngFor="let state of states" [value]="state">
+              {{state.name}}
+            </mat-option>
+          </mat-select>
+          <mat-error *ngIf="stateControl.hasError('required')">Please choose an State</mat-error>
+        </mat-form-field>
+  
+        <div class="text-center">
+          <button mat-stroked-button color="primary">Submit</button>
+        </div>
+  
+      </form>
+    </div>
+  </div>

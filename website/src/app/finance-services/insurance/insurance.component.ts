@@ -11,5 +11,6 @@ export class InsuranceComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
+  title: string = "INSURANCE";
+  panelOpenState = false;
 }

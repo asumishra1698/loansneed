@@ -11,5 +11,6 @@ export class CreditCardComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
+  title: string = "CREDIT CARD";
+  panelOpenState = false;
 }

@@ -11,5 +11,6 @@ export class GoldLoanComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
+  title: string = "GOLD LOAN";
+  panelOpenState = false;
 }

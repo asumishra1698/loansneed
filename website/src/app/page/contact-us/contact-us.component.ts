@@ -11,5 +11,6 @@ export class ContactUsComponent implements OnInit {
 
   ngOnInit(): void {
   }
+  title: string = "Contact Us";
 
 }

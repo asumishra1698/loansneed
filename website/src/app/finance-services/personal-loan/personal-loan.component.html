@@ -1,1 +1,147 @@
-<p>personal-loan works!</p>
+<div class="container" style="text-align: justify;">
+    <h1 class="text-center wavy">{{title}}</h1>
+    <img src="./assets/personal-loan.webp" alt="personalloan" width="100%" height="auto">
+    <p class="mt-4">Personal Loan is an unsecured loan for salaried and self-employed wherein no security is required
+        against the
+        loan. Unsecured Personal Loan can be taken to finance any short-term requirement like overseas trips, marriage,
+        medical emergencies, etc. The only condition is that the Personal Loan should not be used for speculative
+        purposes.
+    </p>
+    <p>
+        Personal Loan is a simple and quick process of funding your financial requirement with minimum documentation and
+        a hassle free product in banking to get funds. In India, Banks as well as Non-Banking Financial Corporation
+        (NBFC) finance Personal Loan.
+    </p>
+    <h2>Personal Loans has the following features:</h2>
+    <ul>
+        <li>
+            They are provided without any specific purpose.</li>
+        <li>are given without a collateral or guarantor.</li>
+        <li>They come at an attractive rate of interest..</li>
+        <li>They are relatively short term loans vis a vis other loans(i.e 3 to 5 years)</li>
+        <li>Personal Loan can get disbursed as fast as 24 hrs if the documents are in order.</li>
+        <li>Personal loans are currently offered from Rs 50,000 to Rs 50 Lakhs and are typically repaid in tenures
+            ranging from 1 to 5 years.Higher Loan Amount + Least Loan Tenure = Low Interest Amount
+        </li>
+    </ul>
+    <div class="mb-4">
+        <h2>DOCUMENTS REQUIRED FOR PERSONAL LOAN</h2>
+    </div>
+    <mat-accordion>
+        <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+            <mat-expansion-panel-header>
+                <mat-panel-title>
+                    THE GENERAL LIST FOR OBTAINING A PERSONAL LOAN ARE AS FOLLOWS:
+                </mat-panel-title>
+            </mat-expansion-panel-header>
+            <ol>
+                <li>Photograph</li>
+                <li>Identity proof</li>
+                <li>Address proof</li>
+                <li>Income proof</li>
+                <li>Bank Statements</li>
+                <li>Continuity Proof</li>
+                <li>Qualification proof( applicable only for Self Employed Professionals)</li>
+            </ol>
+        </mat-expansion-panel>
+        <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+            <mat-expansion-panel-header>
+                <mat-panel-title>
+                    IDENTITY PROOF (ANY ONE OF THE FOLLOWING)
+                </mat-panel-title>
+            </mat-expansion-panel-header>
+            <ul>
+                <li>Copy of PAN Card</li>
+                <li>Copy of Passport</li>
+                <li>Copy of Driving Licence</li>
+                <li>Copy of Government ID card</li>
+                <li>Copy of Voter ID card</li>
+                <li>Copy of Company ID Card (for select Corporates)</li>
+            </ul>
+        </mat-expansion-panel>
+        <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+            <mat-expansion-panel-header>
+                <mat-panel-title>
+                    ADDRESS PROOF (ANY ONE OF THE FOLLOWING)
+                </mat-panel-title>
+            </mat-expansion-panel-header>
+            <ul>
+                <li>Copy of Passport (Can also be used as proof of identity)</li>
+                <li>Copy of Telephone Bill (both landline and post paid mobile connection)</li>
+                <li>Copy of Driving licence</li>
+                <li>Copy of Voter ID card</li>
+                <li>Copy of Ration card</li>
+                <li>Copy of Electricity bill</li>
+                <li>Copy of bank statement ( computerised statements only)</li>
+                <li>Copy of Life Insurance premium receipt</li>
+                <li>Copy of any title deed( Sale deed/ Index II)</li>
+                <li>Copy of Property tax receipt</li>
+                <li>Copy of Leave &amp; License Agreement</li>
+                <li>Copy of latest credit card statement</li>
+            </ul>
+        </mat-expansion-panel>
+        <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+            <mat-expansion-panel-header>
+                <mat-panel-title>
+                    AGE PROOF (ANY ONE OF THE FOLLOWING)
+                </mat-panel-title>
+            </mat-expansion-panel-header>
+            <ul>
+                <li>Copy of PAN card</li>
+                <li>Copy of Passport</li>
+                <li>Copy of Birth Certificate issued by competent authority</li>
+            </ul>
+        </mat-expansion-panel>
+        <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+            <mat-expansion-panel-header>
+                <mat-panel-title>
+                    SIGNATURE VERIFICATION PROOF ( ANY OF THE FOLLOWING)
+                </mat-panel-title>
+            </mat-expansion-panel-header>
+            <ul>
+                <li>Copy of PAN card</li>
+                <li>Copy of Passport</li>
+                <li>Copy of Birth Certificate issued by competent authority</li>
+            </ul>
+        </mat-expansion-panel>
+        <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+            <mat-expansion-panel-header>
+                <mat-panel-title>
+                    INCOME DOCUMENTS (ANY ONE OF THE FOLLOWING)
+                </mat-panel-title>
+            </mat-expansion-panel-header>
+            <ul>
+                <li>Copy of latest three salary slips</li>
+                <li>Copy of appointment letter or Form No. 16 indicating proof of continuity in employment</li>
+                <li>Bank statements for the last 3 months</li>
+            </ul>
+            <strong>For Self-employed Individuals :</strong>
+            <ul>
+                <li>Copy of last two year IT returns along with computation of income, Balance sheet and Profit &amp;
+                    Loss a/c , audited reports ( in case of audited financials)</li>
+                <li>CA certified financials ( in case of unaudited financials)</li>
+                <li>Bank statements of last six months of the main business banking</li>
+            </ul>
+        </mat-expansion-panel>
+    </mat-accordion>
+    <div class="mt-4">
+        <h2>Eligibility Criterias of Personal Loan</h2>
+    </div>
+    <table mat-table [dataSource]="dataSource" class="mat-elevation-z8 mb-4">
+        <!-- Name Column -->
+        <ng-container matColumnDef="Required">
+            <th mat-header-cell *matHeaderCellDef> Required </th>
+            <td mat-cell *matCellDef="let element"> {{element.Required}} </td>
+        </ng-container>
+        <!-- Weight Column -->
+        <ng-container matColumnDef="Eligibility">
+            <th mat-header-cell *matHeaderCellDef> Eligibility </th>
+            <td mat-cell *matCellDef="let element"> {{element.Eligibility}} </td>
+        </ng-container>
+        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+    </table>
+    <div class="text-center mt-2 mb-2">
+        <a routerLink="../../page/apply-now" mat-raised-button>APPLY NOW</a>
+    </div>
+</div>

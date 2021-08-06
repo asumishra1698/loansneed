@@ -1,0 +1,33 @@
+.footer-back{
+    background-color: #0a0a0a;
+    color: white;
+    padding-top: 2%;
+}
+.list-unstyled li a {
+    color: white;
+    font-size: 14px;
+    line-height: 2;
+}
+p, h3, ul, li{
+    color: white;
+}
+a{
+    text-align: left !important;
+}
+
+h2{
+color: #fc850a;
+}
+
+.footer-copyright a{
+color: green;
+}
+
+@media screen and (max-width: 600px) {
+    .list-unstyled li a {
+        text-align: center;
+    }
+    h1,h2,h3, p, ul, li{
+        text-align: center;
+    }
+  }
